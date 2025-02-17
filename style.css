@@ -1,11 +1,17 @@
 body {
-    font-family: Arial, sans-serif;
+    background-image: 
+    url('images/image.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     text-align: center;
-    background-color: whitesmoke;
-    color: #333;
-    transition: background 0.3s, color 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 
 }
+
+
 
 .container {
     padding: 20px;
@@ -16,6 +22,8 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
 
 }
 
@@ -31,7 +39,7 @@ button {
 }
 
 button :hover {
-    background: #0056b3;
+    background: green;
 }
 
 .dark-mode {
@@ -49,4 +57,37 @@ button :hover {
 
 .dark-mode button :hover {
     background-color: #777;
+}
+
+.quote-box {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    #quote {
+        font-size: 1.2em;
+    }
+    button {
+        padding: 8px; 
+    }
 }
